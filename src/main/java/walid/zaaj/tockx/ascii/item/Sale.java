@@ -19,15 +19,15 @@ public class Sale {
         return this.price;
     }
 
-    public compareTo(Offer){
-
+    public int compareTo(Offer offer){
+        return this.price.compareTo(offer.value());
     }
 
 
     @Override
     public String toString() {
-        return "size:" + getSize() + "\n" +
-                "price:" + getPrice();
+        return "size: " + size() + "\n" +
+                "price: " + value();
     }
 
 
